@@ -1,5 +1,11 @@
 # Point of Sale (PoS)
 
+**Mike's Project** This fork is meant to fetch a banner value as part of the ConfigMap in order to change the front-end of the application.
+
+The variable is first referenced in service-configs.yaml in the common service folder. And then used in MainPage.vue as VUE_APP_ENV_BANNER
+
+The following steps are to build the app and set YAMLs in an installation already done.
+
 **Point of Sale** is a sample application that simulates a retail store kiosk
 used to submit and track orders and payments.
 

@@ -20,6 +20,7 @@ metadata:
 data:
   INVENTORY_EP: "http://inventory-svc:8080"
   PAYMENTS_EP: "http://payments-svc:8080"
+  VUE_APP_ENV_BANNER: 'https://storage.googleapis.com/edge_banner/Untitled%20presentation.png'
   ACTIVE_ITEM_TYPE: "burgers"
   ITEMS: |
     items:
