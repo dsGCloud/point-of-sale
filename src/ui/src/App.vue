@@ -16,6 +16,12 @@
 
 <template>
   <div id="app">
+    <div>
+      <b-navbar type="dark" variant="warning">
+        <b-navbar-brand style="padding-left:20px;"
+          href="#">NeaBar</b-navbar-brand>
+      </b-navbar>
+    </div>
     <MainPage ref="main" />
   </div>
 </template>

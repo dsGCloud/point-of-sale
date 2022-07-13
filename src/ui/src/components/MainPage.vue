@@ -19,7 +19,9 @@
     <div class="row" id="pos">
       <div class="col-md-8 col-md-offset-2">
         <div class="header-container">
-          <h1 class="h1-flex">Point of Sale</h1>
+        </div>
+        <div class="row">
+          <b-img :src="banner_url" fluid alt="Responsive image"></b-img>
         </div>
         <div class="row">
           <div class="col-md-6">
@@ -44,6 +46,7 @@
   </div>
 </template>
 
+<script src="<%= VUE_APP_ENV_BANNER %>config.js"></script>
 <script>
 import RetailEdgeAppApi from '@/services/RetailEdge';
 import ItemList from './ItemList.vue';
@@ -63,7 +66,11 @@ export default {
       lineItems: [],
       storeTypes: [],
       printedBill: null,
+      banner_url: process.env.VUE_APP_ENV_BANNER
     };
+  },
+  mounted() {
+    console.log(process.env.VUE_APP_ENV_BANNER)
   },
   computed: {
     currentItems() {

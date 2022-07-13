@@ -3,7 +3,7 @@
   "version": "0.1.1-SNAPSHOT",
   "private": true,
   "scripts": {
-    "serve": "npm run lint && vue-cli-service serve",
+    "serve": "npm run lint && vue-cli-service serve --host localhost",
     "lint": "vue-cli-service lint",
     "copy": "cp -r src/assets target/dist/static && cp src/assets/favicon.ico target/dist/",
     "build": "vue-cli-service build --mode production && npm run copy"
